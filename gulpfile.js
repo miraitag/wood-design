@@ -21,7 +21,7 @@ gulp.task('sass__compile', function(){
 	.pipe(autoprefixer({
 		browsers: ['last 2 versions']
 	}))
-	.pipe(concat('styles.css'))
+	.pipe(concat('global.css'))
 	.pipe(gulp.dest('dist/css/'))
 });
 
