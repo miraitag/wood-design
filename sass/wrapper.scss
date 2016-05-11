@@ -1,0 +1,14 @@
+.wd-wrapper{
+	width: 100%;
+	overflow: hidden;
+	&__max{
+		width: 100%;
+		margin: auto;
+		@media all and (min-width: 947px){
+			max-width: 947px;
+		}
+		@media all and (min-width: 1280px){
+			max-width: 1280px;
+		}
+	}
+}

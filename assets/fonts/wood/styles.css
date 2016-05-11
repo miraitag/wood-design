@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "wood-design";
+  src:url("wood-design.eot");
+  src:url("wood-design.eot?#iefix") format("embedded-opentype"),
+    url("wood-design.woff") format("woff"),
+    url("wood-design.ttf") format("truetype"),
+    url("wood-design.svg#wood-design") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "wood-design" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="wd-icon-"]:before,
+[class*=" wd-icon-"]:before {
+  font-family: "wood-design" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wd-icon-down:before {
+  content: "\61";
+}
+.wd-icon-left:before {
+  content: "\62";
+}
+.wd-icon-right:before {
+  content: "\63";
+}
+.wd-icon-up:before {
+  content: "\64";
+}
+.wd-icon-comment:before {
+  content: "\66";
+}
+.wd-icon-facebook:before {
+  content: "\67";
+}
+.wd-icon-vimeo:before {
+  content: "\69";
+}
+.wd-icon-youtube:before {
+  content: "\6a";
+}
+.wd-icon-twitter:before {
+  content: "\6b";
+}
+.wd-icon-vine:before {
+  content: "\6c";
+}
+.wd-icon-linkedin:before {
+  content: "\68";
+}
+.wd-icon-pinterest:before {
+  content: "\6d";
+}
+.wd-icon-instagram:before {
+  content: "\6e";
+}
+.wd-icon-hamburger:before {
+  content: "\6f";
+}
+.wd-icon-close:before {
+  content: "\70";
+}
+.wd-icon-check:before {
+  content: "\65";
+}
+.wd-icon-play:before {
+  content: "\71";
+}
+.wd-icon-pause:before {
+  content: "\72";
+}
+.wd-icon-whatsapp:before {
+  content: "\73";
+}
+.wd-icon-stop:before {
+  content: "\74";
+}
+.wd-icon-mute:before {
+  content: "\75";
+}
+.wd-icon-volume:before {
+  content: "\76";
+}
+.wd-icon-mail:before {
+  content: "\77";
+}
+.wd-icon-user:before {
+  content: "\78";
+}
+.wd-icon-phone:before {
+  content: "\79";
+}
+.wd-icon-copyright:before {
+  content: "\7a";
+}
+.wd-icon-student:before {
+  content: "\41";
+}
+.wd-icon-location:before {
+  content: "\42";
+}
+.wd-icon-skype:before {
+  content: "\43";
+}
+.wd-icon-share:before {
+  content: "\44";
+}
