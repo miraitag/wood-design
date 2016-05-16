@@ -3,16 +3,16 @@ body {
   font-size: 14px; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none !important; }
 
-ul, ol, p, figure {
-  margin: 0; }
+ul, ol, p, figure, h1, h2, h3, h4, h5, h6 {
+  margin: 0 !important; }
 
 ul, ol {
-  padding: 0; }
+  padding: 0 !important; }
 
 li {
-  list-style: none; }
+  list-style: none !important; }
 
 .wd-menu {
   min-height: 50px;
@@ -157,21 +157,6 @@ li {
     .wd-menu.open .wd-menu__panel {
       left: 0;
       transition: all 300ms linear; }
-
-.wd-main {
-  width: 100%;
-  background: red;
-  margin-left: 0;
-  transition: all 300ms linear; }
-  .wd-main.collapsable {
-    transition: all 300ms linear;
-    position: relative;
-    top: 60px;
-    z-index: -1;
-    margin-left: 300px; }
-    @media all and (min-width: 947px) {
-      .wd-main.collapsable {
-        margin-left: 0; } }
 
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -541,149 +526,187 @@ textarea {
 
 .wd-stage {
   width: 100%;
-  background: url(../../assets/img/preview_home.jpg) no-repeat center center, #8E551A;
-  background-attachment: fixed;
-  overflow: hidden; }
-  .wd-stage__separate {
-    border: 5px solid #fff; }
-  .wd-stage__prox {
-    margin: 0;
-    color: #fff;
-    font-size: 11vw;
-    padding-top: 0.5em;
-    text-transform: uppercase;
-    text-shadow: 5px 5px 5px #000;
-    text-align: center; }
-    @media all and (min-width: 647px) {
-      .wd-stage__prox {
-        font-size: 4.5em; } }
-  .wd-stage__main {
-    max-width: 100%;
+  min-height: 600px;
+  max-height: 600px;
+  overflow: hidden;
+  position: relative; }
+  .wd-stage__content {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    margin: auto;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 95%;
-    -webkit-flex-direction: column-reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse; }
-    @media all and (min-width: 647px) {
-      .wd-stage__main {
-        -webkit-flex-direction: row;
-            -ms-flex-direction: row;
-                flex-direction: row; } }
-    @media all and (min-width: 1010px) {
-      .wd-stage__main {
-        max-width: 1010px; } }
-    @media all and (min-width: 1280px) {
-      .wd-stage__main {
-        max-width: 1260px; } }
-    .wd-stage__main-students, .wd-stage__main-logo {
-      margin: 0; }
-      .wd-stage__main-students > img, .wd-stage__main-logo > img {
+    position: relative;
+    z-index: 1; }
+    .wd-stage__content-image {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .wd-stage__content-image img {
         width: 100%; }
-    .wd-stage__main-students {
-      max-width: 100%; }
-      @media all and (min-width: 647px) {
-        .wd-stage__main-students {
-          max-width: 60%; } }
-    .wd-stage__main-logo {
-      max-width: 70%;
-      text-align: center;
-      background: rgba(255, 255, 255, 0.3);
-      border-radius: 2.2em;
-      padding: 1em;
-      text-transform: uppercase;
-      margin-top: 2em; }
-      @media all and (min-width: 647px) {
-        .wd-stage__main-logo {
-          margin-top: 0;
-          max-width: 40%; } }
-      .wd-stage__main-logo__title, .wd-stage__main-logo__new {
-        overflow: hidden;
-        margin: 0;
-        color: #fff;
-        text-shadow: 5px 5px 5px #000; }
-      .wd-stage__main-logo__title {
-        font-size: 13vw; }
-        @media all and (min-width: 647px) {
-          .wd-stage__main-logo__title {
-            font-size: 7.5vw; } }
-        @media all and (min-width: 947px) {
-          .wd-stage__main-logo__title {
-            font-size: 4em; } }
-        @media all and (min-width: 1280px) {
-          .wd-stage__main-logo__title {
-            font-size: 6em; } }
-      .wd-stage__main-logo__new {
-        font-weight: 700;
-        font-size: 9vw; }
-        @media all and (min-width: 647px) {
-          .wd-stage__main-logo__new {
-            font-size: 5vw; } }
-        @media all and (min-width: 947px) {
-          .wd-stage__main-logo__new {
-            font-size: 3em; } }
-        @media all and (min-width: 1280px) {
-          .wd-stage__main-logo__new {
-            font-size: 4em; } }
-
-.wd-footer {
-  background: #e2b241;
-  color: #000;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 1em;
-  border-top: 10px solid #000;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  font-size: 1.3em; }
-  @media all and (min-width: 647px) {
-    .wd-footer {
-      -webkit-flex-direction: row;
-          -ms-flex-direction: row;
-              flex-direction: row; } }
-  .wd-footer__facebook {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    width: auto;
-    height: 45px;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-decoration: none;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: #000; }
-    .wd-footer__facebook > b {
-      transition: all 300ms linear; }
-    @media all and (min-width: 947px) {
-      .wd-footer__facebook:hover > b {
-        color: gray;
-        transition: all 300ms linear; } }
-    .wd-footer__facebook > b {
-      margin-right: 1em; }
-  .wd-footer__adress {
+    .wd-stage__content-title {
+      font-size: 3em; }
+    .wd-stage__content-description {
+      font-size: 1.5em; }
+  .wd-stage__background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
     width: 100%; }
-    @media all and (min-width: 647px) {
-      .wd-footer__adress {
-        width: 65%; } }
+    .wd-stage__background img {
+      width: 100%; }
+
+/*$color-uno: #8E551A;
+$color-dos: #e2b241;
+$color-tres: #fff;
+$color-cuatro: #000;
+.wd{
+	&-stage{
+		width: 100%;
+		background: url(../../assets/img/preview_home.jpg) no-repeat center center, $color-uno;
+		background-attachment: fixed;
+		overflow: hidden;
+		&__separate{
+			border: 5px solid $color-tres;
+		}
+		&__prox{
+		    margin: 0;
+		    color: $color-tres;
+		    font-size: 11vw;
+        	padding-top: 0.5em;
+		    text:{
+		    	transform: uppercase;
+		    	shadow: 5px 5px 5px $color-cuatro;
+		    	align: center;
+		    }
+		    @media all and (min-width: 647px){
+		    	font-size: 4.5em;
+		    }
+		}
+		&__main{
+			max-width: 100%;
+			display: flex;
+		    margin: auto;
+	        justify-content: center;
+    		align-items: center;
+    		width: 95%;
+    		flex-direction: column-reverse;
+    		@media all and (min-width: 647px){
+    			flex-direction: row;
+    		}
+			@media all and (min-width: 1010px){
+				max-width: 1010px;
+			}
+			@media all and (min-width: 1280px){
+				max-width: 1260px;
+			}
+			&-students, &-logo{
+				margin: 0;
+				> img{
+					width: 100%;
+				}
+			}
+			&-students{
+				max-width: 100%;
+				@media all and (min-width: 647px){
+					max-width: 60%;
+				}
+			}
+			&-logo{
+			    max-width: 70%;
+    			text-align: center;
+    			background: rgba($color-tres,0.3);
+				border-radius: 2.2em;
+			    padding: 1em;
+		     	text-transform: uppercase;
+	     	    margin-top: 2em;
+		     	@media all and (min-width: 647px){
+		     		margin-top: 0;
+		     		max-width: 40%;
+		     	}
+		     	&__title, &__new{
+		     		overflow: hidden;
+				    margin: 0;
+				    color: $color-tres;
+				    text-shadow: 5px 5px 5px $color-cuatro;
+		     	}
+				&__title{
+					font-size: 13vw;
+					@media all and (min-width: 647px){
+						font-size: 7.5vw;
+					}
+					@media all and (min-width: 947px){
+						font-size: 4em;
+					}
+					@media all and (min-width: 1280px){
+						font-size: 6em;
+					}
+				}
+				&__new{
+					font-weight: 700;
+					font-size: 9vw;
+					@media all and (min-width: 647px){
+						font-size: 5vw;
+					}
+					@media all and (min-width: 947px){
+						font-size: 3em;
+					}
+					@media all and (min-width: 1280px){
+						font-size: 4em;
+					}
+				}
+			}
+		}
+	}
+	&-footer{
+		background: $color-dos;
+		color: $color-cuatro;
+	    display: flex;
+        padding: 1em;
+        border-top: 10px solid $color-cuatro;
+        align-items: center;
+        flex-direction: column;
+    	justify-content: space-between;
+	    font-size: 1.3em;
+	    @media all and (min-width: 647px){
+	    	flex-direction: row;
+	    }
+		&__facebook{
+			display: flex;
+			width: auto;
+			height: 45px;
+		    justify-content: center;
+		    text-decoration: none;
+    		align-items: center;
+    		color: $color-cuatro;
+    		> b{
+    			transition: all 300ms linear;
+    		}
+    		@media all and (min-width: 947px){
+    			&:hover{
+    				> b{
+    					color: gray;
+    					transition: all 300ms linear;
+    				}
+    			}
+    		}
+    		> b{
+	    	    margin-right: 1em;
+		    }
+		}
+		&__adress{
+			width: 100%;
+			@media all and (min-width: 647px){
+				width: 65%;
+			}
+		}
+	}
+}*/
 
 .wd-wrapper {
   width: 100%;
@@ -691,9 +714,23 @@ textarea {
   .wd-wrapper__max {
     width: 100%;
     margin: auto; }
-    @media all and (min-width: 947px) {
+    @media all and (min-width: 647px) {
       .wd-wrapper__max {
         max-width: 947px; } }
-    @media all and (min-width: 1280px) {
+    @media all and (min-width: 947px) {
       .wd-wrapper__max {
-        max-width: 1280px; } }
+        max-width: 100%; } }
+
+.wd-main {
+  width: 100%;
+  margin-left: 0;
+  transition: all 300ms linear; }
+  .wd-main.collapsable {
+    transition: all 300ms linear;
+    position: relative;
+    top: 60px;
+    z-index: -1;
+    margin-left: 300px; }
+    @media all and (min-width: 947px) {
+      .wd-main.collapsable {
+        margin-left: 0; } }

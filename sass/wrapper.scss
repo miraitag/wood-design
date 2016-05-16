@@ -4,11 +4,28 @@
 	&__max{
 		width: 100%;
 		margin: auto;
-		@media all and (min-width: 947px){
+		@media all and (min-width: 647px){
 			max-width: 947px;
 		}
-		@media all and (min-width: 1280px){
-			max-width: 1280px;
+		@media all and (min-width: 947px){
+			max-width: 100%;
 		}
+	}
+}
+
+
+.wd-main{
+	width: 100%;
+	margin-left: 0;
+	transition: all 300ms linear;
+	&.collapsable{
+		transition: all 300ms linear;
+		position: relative;
+    	top: 60px;
+    	z-index: -1;
+    	margin-left: 300px;
+    	@media all and (min-width: 947px){
+		    margin-left: 0;
+    	}
 	}
 }
