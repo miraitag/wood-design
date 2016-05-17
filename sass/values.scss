@@ -1,0 +1,101 @@
+$color-tres: #fff;
+$color-cuatro: #000;
+.wd-values{
+	display: flex;
+	align-items: center;
+	position: relative;
+    z-index: 1;
+    padding: 1em 0;
+    height: 300px;
+    &__content{
+    	display: flex;
+    	max-width: 100%;
+    	width: 100%;
+    	flex-direction: column;
+    	align-items: center;
+    	margin: auto;
+    	width: 100%;
+    	height: 100%;
+	    justify-content: space-around;
+	    @media all and (min-width: 948px){
+	    	max-width: 90%;
+	    }
+    	&-title{
+    		color: $color-tres;
+    	}
+    	&-items{
+    		width: 100%;
+    		@media all and (max-width: 947px){
+			    height: 150px;
+			    overflow: hidden;
+	    	}
+    		main{
+	    		width: 100%;
+	    		@media all and (max-width: 947px){
+				    white-space: nowrap;
+				    height: 300px;
+				    overflow-x: scroll;
+	    		}
+	    		@media all and (min-width: 948px){
+	    			flex-wrap: wrap;
+	    			justify-content: space-around;
+	    			display: flex;
+	    		}
+	    		button{
+					width: 150px;
+					height: 150px;
+					border-radius: 50%;
+					background: red;
+					padding: 0;
+					cursor: pointer;
+					font-size: 1.5em;
+					color: $color-tres;
+					position: relative;
+					z-index: 0;
+					overflow: hidden;
+					@media all and (max-width: 947px){
+						margin:0 0.5em;
+					}
+					@media all and (min-width: 948px){
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						flex: 0 0 auto;
+					}
+					p{
+						opacity: 1;
+						transition: all 300ms linear;
+					}
+					&:after{
+						content: 'Ver Más';
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						background: rgba( $color-cuatro, .4);
+						left: 0;
+						top: 0;
+						z-index: 1;
+						border-radius: 50%;
+						transition: all 300ms linear;
+						opacity: 0;
+						display: flex;
+						justify-content: center;
+	    				align-items: center;
+					}
+					@media all and (min-width: 948px){
+						&:hover{
+							p{
+								opacity: 0;
+								transition: all 300ms linear;
+							}
+							&:after{
+								opacity: 1;
+								transition: all 600ms linear;
+							}
+						}
+					}
+				}
+			}
+    	}
+    }
+}

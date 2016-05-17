@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Escuela WoodDesign</title>
-	<link rel="stylesheet" href="dist/css/global.css">
 	<meta content="Escuela Wood And Design" name="author" />
 	<meta content="Escuela Wood And Design y Escuela Preparatoria" name="description" />
 	<meta content="Escuela, Especialidad, Carpintería, Profesionalismo, Preparatoria, Prepa, Diseño, Madera, Industria Madedera, Especialistas, Juventud, Oportunidad" name="keywords" />

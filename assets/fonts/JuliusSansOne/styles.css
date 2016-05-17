@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'Julius Sans One';
+	src: url('JuliusSansOne-Regular.eot');
+	src: url('JuliusSansOne-Regular.eot?#iefix') format('embedded-opentype'),
+		url('JuliusSansOne-Regular.woff') format('woff'),
+		url('JuliusSansOne-Regular.ttf') format('truetype'),
+		url('JuliusSansOne-Regular.svg#JuliusSansOne-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

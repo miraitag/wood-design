@@ -1,0 +1,23 @@
+$color-cuatro: #000;
+.wd-title{
+    line-height: 1em;
+	text-transform: uppercase;
+	text-shadow: 3px 3px 5px $color-cuatro;
+	font:{
+		family:'Montserrat Bold', sans-serif;
+		size: 2.5em;
+	}
+	@media all and (min-width: 648px){
+		font-size: 4em;
+	}
+	&__description{
+		font: {
+			family: 'Julius Sans One', sans-serif;
+			size: 1.5em;
+		}
+		line-height: 1.2em;
+		@media all and (min-width: 648px){
+			font-size: 2em;
+		}
+	}
+}
