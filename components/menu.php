@@ -10,7 +10,7 @@
 				<a href="#">Aqui va a ir un link</a>
 			</li>
 			<li class="wd-menu__panel-content__item submenu">
-				<a href="#">Aqui va a ir un link secundaro</a>
+				<a href="#">Aqui va a ir un link secundaro <i></i></a>
 				<ul>
 					<li><a href="#">Segundo menu</a></li>
 					<li><a href="#">Segundo menu</a></li>
@@ -18,7 +18,7 @@
 				</ul>
 			</li>
 			<li class="wd-menu__panel-content__item submenu">
-				<a href="#">Aqui va a ir un link secundario</a>
+				<a href="#">Aqui va a ir un link secundario<i></i></a>
 				<ul>
 					<li><a href="#">Segundo menu</a></li>
 					<li><a href="#">Segundo menu</a></li>

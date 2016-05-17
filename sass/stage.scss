@@ -26,7 +26,7 @@ $color-cuatro: #000;
 		}
 		@media all and (min-width: 481px){
 			flex-direction: row;
-			justify-content: space-around;
+			justify-content: space-between;
     		align-items: center;
 		}
 		&-image{
@@ -54,6 +54,8 @@ $color-cuatro: #000;
 			color: $color-tres;
 			text-align: center;
 			width: 90%;
+			padding: 1em;
+			box-sizing: border-box;
 			@media all and (max-width: 480px){
 				order: 0;
 			}
@@ -67,7 +69,7 @@ $color-cuatro: #000;
 			&__title{
 			  	max-height: 105px;
 			  	@media all and (min-width: 481px){
-			  		max-height: 130px;
+			  		max-height: 170px;
 			  	}
 				max-width: 600px;
     			overflow: hidden;
@@ -107,10 +109,13 @@ $color-cuatro: #000;
 					    }
 					    &__txt{
 					    	position: absolute;
-				    	    right: -15%;
+				    	    right: -17%;
 						    top: 50%;
 	    					max-width: calc(100% / 3 );
 						    transform: translate(-50%,-50%);
+						    max-height: 230px;
+	    					padding: 0.5em;
+							box-sizing: border-box;
 					    }
 					}
 				}
@@ -124,10 +129,13 @@ $color-cuatro: #000;
 				&-image{
 					order: 1;
 					padding: 0;
+					@media all and (min-width: 481px){
+						align-self: flex-end;
+					}
 				}
 				&-description{
 					order: 0;
-				    text-align: right;
+					align-self: center;
 				}
 			}
 		}
@@ -158,8 +166,35 @@ $color-cuatro: #000;
 	}
 	&.yellow{
 		background: $color-dos;
+		.wd-stage__content{
+			&-description{
+				background: $color-cuatro;
+				&__txt{
+					color: $color-dos;
+				} 
+			}
+		}
 	}
 	&.black{
 		background: $color-cuatro;
+		.wd-stage__content{
+			&-description{
+				background: $color-dos;
+				&__txt{
+					color: $color-cuatro;
+				} 
+			}
+		}
+	}
+	&.gray{
+		background: rgba($color-cuatro, 0.5);
+		.wd-stage__content{
+			&-description{
+				&__txt{
+					background: $color-dos;
+					color: $color-tres;
+				} 
+			}
+		}
 	}
 }

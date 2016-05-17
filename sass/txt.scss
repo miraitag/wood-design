@@ -8,6 +8,9 @@ $color-cuatro: #000;
 		size: 2.5em;
 	}
 	@media all and (min-width: 648px){
+		font-size: 3em;
+	}
+	@media all and (min-width: 948px){
 		font-size: 4em;
 	}
 	&__description{

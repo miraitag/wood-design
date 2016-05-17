@@ -6,15 +6,19 @@
 				<?php
 					$stage_location = 'right';
 					$stage_class = 'yellow';
+					$stage_title = 'Wood & Design';
 					//$stage_background = ['true', 'stage_home'];
 					include "components/stage.php";
+					$stage_class = 'black';
 					$stage_title = 'Misión';
 					include "components/stage.php";
 					$stage_location = 'center';
+					$stage_class = 'gray';
 					$stage_title = 'Visión';
 					$stage_description = 'En este campo ira las descripción de la visión general';
 					include "components/stage.php";
 					include "components/values.php";
+					include "components/foo.php";
 				?>
 			</main>
 		</div>
