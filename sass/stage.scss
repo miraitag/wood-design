@@ -14,7 +14,7 @@ $color-cuatro: #000;
 		margin: auto;
 		@media all and (min-width: 1280px){
 			max-width: 1280px;
-		}		
+		}
 	}
 	&__content{
 		display: flex;
@@ -70,16 +70,16 @@ $color-cuatro: #000;
 			  		max-height: 130px;
 			  	}
 				max-width: 600px;
-    			overflow: hidden; 
+    			overflow: hidden;
 			}
 			&__txt{
     			max-height: 50px;
-    			max-width: 600px; 
+    			max-width: 600px;
     			overflow: hidden;
     			@media all and (min-width: 481px){
     				max-height: 100px;
     			}
-			} 
+			}
 		}
 		&.center{
 			position: relative;
@@ -118,7 +118,7 @@ $color-cuatro: #000;
 		}
 		&.right{
 		    @media all and (min-width: 481px){
-		    	justify-content: space-around;
+	    	    justify-content: space-between;
 		    }
 			.wd-stage__content{
 				&-image{
@@ -127,6 +127,7 @@ $color-cuatro: #000;
 				}
 				&-description{
 					order: 0;
+				    text-align: right;
 				}
 			}
 		}
@@ -154,5 +155,11 @@ $color-cuatro: #000;
 				}
 			}
 		}
+	}
+	&.yellow{
+		background: $color-dos;
+	}
+	&.black{
+		background: $color-cuatro;
 	}
 }
