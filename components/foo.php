@@ -12,7 +12,7 @@
 			<li class="wd-footer__shares-item pinterest"><a href="#"><i class="wd-icon-pinterest"></i></a></li>
 			<li class="wd-footer__shares-item linkedin"><a href="#"><i class="wd-icon-linkedin"></i></a></li>
 			<li class="wd-footer__shares-item vine"><a href="#"><i class="wd-icon-vine"></i></a></li>
-			<li class="wd-footer__shares-item vine"><a href="#"><i class="wd-icon-whatsapp"></i></a></li>
+			<li class="wd-footer__shares-item whatsapp"><a href="#"><i class="wd-icon-whatsapp"></i></a></li>
 		</ul>
 	</div>
 </footer>

@@ -1,7 +1,199 @@
-@import url(../../assets/fonts/wood/styles.css);
-@import url(../../assets/fonts/JuliusSansOne/styles.css);
-@import url(../../assets/fonts/Montserrat/styles.css);
-@import url(../../assets/fonts/Oswald/styles.css);
+@font-face {
+	font-family: 'Julius Sans One';
+	src: url('../../assets/fonts/JuliusSansOne/JuliusSansOne-Regular.eot');
+	src: url('../../assets/fonts/JuliusSansOne/JuliusSansOne-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../../assets/fonts/JuliusSansOne/JuliusSansOne-Regular.woff') format('woff'),
+		url('../../assets/fonts/JuliusSansOne/JuliusSansOne-Regular.ttf') format('truetype'),
+		url('../../assets/fonts/JuliusSansOne/JuliusSansOne-Regular.svg#JuliusSansOne-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../../assets/fonts/Montserrat/Montserrat-Regular.eot');
+	src: url('../../assets/fonts/Montserrat/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../../assets/fonts/Montserrat/Montserrat-Regular.woff') format('woff'),
+		url('../../assets/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype'),
+		url('../../assets/fonts/Montserrat/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat Bold';
+	src: url('../../assets/fonts/Montserrat/Montserrat-Bold.eot');
+	src: url('../../assets/fonts/Montserrat/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../../assets/fonts/Montserrat/Montserrat-Bold.woff') format('woff'),
+		url('../../assets/fonts/Montserrat/Montserrat-Bold.ttf') format('truetype'),
+		url('../../assets/fonts/Montserrat/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Oswald';
+	src: url('Oswald-Regular.eot');
+	src: url('Oswald-Regular.eot?#iefix') format('embedded-opentype'),
+		url('Oswald-Regular.woff') format('woff'),
+		url('Oswald-Regular.ttf') format('truetype'),
+		url('Oswald-Regular.svg#Oswald-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Oswald Bold';
+	src: url('Oswald-Bold.eot');
+	src: url('Oswald-Bold.eot?#iefix') format('embedded-opentype'),
+		url('Oswald-Bold.woff') format('woff'),
+		url('Oswald-Bold.ttf') format('truetype'),
+		url('Oswald-Bold.svg#Oswald-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Oswald Light';
+	src: url('Oswald-Light.eot');
+	src: url('Oswald-Light.eot?#iefix') format('embedded-opentype'),
+		url('Oswald-Light.woff') format('woff'),
+		url('Oswald-Light.ttf') format('truetype'),
+		url('Oswald-Light.svg#Oswald-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: "wood-design";
+  src:url("../../assets/fonts/wood/wood-design.eot");
+  src:url("../../assets/fonts/wood/wood-design.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/wood/wood-design.woff") format("woff"),
+    url("../../assets/fonts/wood/wood-design.ttf") format("truetype"),
+    url("../../assets/fonts/wood/wood-design.svg#wood-design") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "wood-design" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="wd-icon-"]:before,
+[class*=" wd-icon-"]:before {
+  font-family: "wood-design" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wd-icon-down:before {
+  content: "\61";
+}
+.wd-icon-left:before {
+  content: "\62";
+}
+.wd-icon-right:before {
+  content: "\63";
+}
+.wd-icon-up:before {
+  content: "\64";
+}
+.wd-icon-comment:before {
+  content: "\66";
+}
+.wd-icon-facebook:before {
+  content: "\67";
+}
+.wd-icon-vimeo:before {
+  content: "\69";
+}
+.wd-icon-youtube:before {
+  content: "\6a";
+}
+.wd-icon-twitter:before {
+  content: "\6b";
+}
+.wd-icon-vine:before {
+  content: "\6c";
+}
+.wd-icon-linkedin:before {
+  content: "\68";
+}
+.wd-icon-pinterest:before {
+  content: "\6d";
+}
+.wd-icon-instagram:before {
+  content: "\6e";
+}
+.wd-icon-hamburger:before {
+  content: "\6f";
+}
+.wd-icon-close:before {
+  content: "\70";
+}
+.wd-icon-check:before {
+  content: "\65";
+}
+.wd-icon-play:before {
+  content: "\71";
+}
+.wd-icon-pause:before {
+  content: "\72";
+}
+.wd-icon-whatsapp:before {
+  content: "\73";
+}
+.wd-icon-stop:before {
+  content: "\74";
+}
+.wd-icon-mute:before {
+  content: "\75";
+}
+.wd-icon-volume:before {
+  content: "\76";
+}
+.wd-icon-mail:before {
+  content: "\77";
+}
+.wd-icon-user:before {
+  content: "\78";
+}
+.wd-icon-phone:before {
+  content: "\79";
+}
+.wd-icon-copyright:before {
+  content: "\7a";
+}
+.wd-icon-student:before {
+  content: "\41";
+}
+.wd-icon-location:before {
+  content: "\42";
+}
+.wd-icon-skype:before {
+  content: "\43";
+}
+.wd-icon-share:before {
+  content: "\44";
+}
+
+
 body{	
 	font-size: 14px;
 }
