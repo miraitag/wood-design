@@ -4,6 +4,7 @@
 		<div class="wd-wrapper__max">
 			<main class="wd-main">
 				<?php
+					include "components/slider/index.php";
 					$stage_location = 'right';
 					$stage_class = 'yellow';
 					$stage_title = 'Wood & Design';
