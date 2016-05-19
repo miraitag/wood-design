@@ -27,8 +27,8 @@ $color-cuatro: #000;
 		@media all and (min-width: 481px){
 			flex-direction: row;
 			justify-content: space-between;
-    		align-items: center;
-		}
+			align-items: center;
+		} 
 		&-image{
 			display: flex;
 			justify-content: center;
@@ -37,6 +37,7 @@ $color-cuatro: #000;
 			width: calc(100% / 2);
 			@media all and (max-width: 480px){
 				order: 1;
+				padding-top: 1em;
 			}
 			@media all and ( min-width: 481px){
 				width: calc(100% / 4);
@@ -56,6 +57,7 @@ $color-cuatro: #000;
 			width: 90%;
 			padding: 1em;
 			box-sizing: border-box;
+			height: 100%;
 			@media all and (max-width: 480px){
 				order: 0;
 			}
@@ -78,6 +80,7 @@ $color-cuatro: #000;
     			max-height: 50px;
     			max-width: 600px;
     			overflow: hidden;
+    			padding: 1em 0;
     			@media all and (min-width: 481px){
     				max-height: 100px;
     			}
@@ -89,10 +92,14 @@ $color-cuatro: #000;
 			.wd-stage__content{
 				&-image{
 					order: 1;
-					padding: 0;
 				}
 				&-description{
 					order: 0;
+					@media all and (max-width: 480px){
+						&__title{
+							margin-bottom: 0.5em;
+						}
+					}
 					@media all and (min-width: 481px){
 					    position: absolute;
 					    left: 50%;
@@ -116,6 +123,9 @@ $color-cuatro: #000;
 						    max-height: 230px;
 	    					padding: 0.5em;
 							box-sizing: border-box;
+						    display: flex;
+						    justify-content: center;
+						    align-items: center;
 					    }
 					}
 				}
@@ -128,7 +138,6 @@ $color-cuatro: #000;
 			.wd-stage__content{
 				&-image{
 					order: 1;
-					padding: 0;
 					@media all and (min-width: 481px){
 						align-self: flex-end;
 					}
