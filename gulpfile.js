@@ -9,25 +9,36 @@ var gulp = require('gulp'),
 'use strict';
 
 gulp.task('js__compile', function(){
-	return gulp.src('js/*.js')
-	.pipe(concat('functions.js'))
+	return gulp.src('components/**/functions.js')
+	.pipe(concat('global.functions.js'))
 	//.pipe(uglify())
-	.pipe(gulp.dest('dist/js/'))
+	.pipe(gulp.dest('assets/js/'))
 });
 
 gulp.task('sass__compile', function(){
-	return gulp.src('sass/*.scss')
+	return gulp.src('components/**/styles.scss')
 	.pipe(sass().on('error', sass.logError))
 	.pipe(autoprefixer({
 		browsers: ['last 2 versions']
 	}))
-	.pipe(concat('global.css'))
-	.pipe(gulp.dest('dist/css/'))
+	.pipe(concat('global.styles.css'))
+	.pipe(gulp.dest('assets/css/'))
+});
+
+gulp.task('sass__global__compile',function(){
+	return gulp.src('sass/global.scss')
+	.pipe(sass().on('error', sass.logError))
+	.pipe(autoprefixer({
+		browsers: ['last 2 versions']
+	}))
+	.pipe(concat('global.styles.css'))
+	.pipe(gulp.dest('assets/css/'))
 });
 
 gulp.task('watch', function(){
-	gulp.watch('sass/*.scss',[ 'sass__compile' ]);
-	gulp.watch('js/*.js',[ 'js__compile' ]);
+	gulp.watch('components/**/styles.scss',[ 'sass__compile' ]);
+	gulp.watch('components/**/functions.js',[ 'js__compile' ]);
+	gulp.watch('sass/global.scss',[ 'sass__global__compile' ])
 });
 
-gulp.task('compile', ['sass__compile', 'js__compile','watch'])
+gulp.task('compile', ['sass__compile', 'js__compile', 'watch'])
