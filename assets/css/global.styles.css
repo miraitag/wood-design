@@ -818,7 +818,7 @@ button {
           height: 100%;
           max-height: 45px;
           overflow: hidden;
-          line-height: 1.5em; }
+          line-height: 1.8em; }
           @media all and (min-width: 648px) {
             .wd-menu__panel-content__item > a {
               -ms-flex-align: center;
@@ -862,7 +862,7 @@ button {
                 border-bottom: 2px solid #fff;
                 max-height: 45px;
                 overflow: hidden;
-                line-height: 1.5em; }
+                line-height: 1.8em; }
                 @media all and (min-width: 648px) {
                   .wd-menu__panel-content__item.submenu ul > li > a {
                     -ms-flex-align: center;
