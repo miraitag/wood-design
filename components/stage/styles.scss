@@ -6,6 +6,7 @@ $color-cuatro: #000;
 	width: 100%;
 	overflow: hidden;
 	position: relative;
+	margin-bottom: 2em;
 	@media all and (max-width: 480px){
 		padding: 1em 0 0 0;
 	}
@@ -199,8 +200,8 @@ $color-cuatro: #000;
 		background: rgba($color-cuatro, 0.5);
 		.wd-stage__content{
 			&-description{
+				background: $color-cuatro;
 				&__txt{
-					background: $color-dos;
 					color: $color-tres;
 				} 
 			}

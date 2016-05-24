@@ -1,0 +1,128 @@
+$color-uno: #8E551A;
+$color-dos: #e2b241;
+$color-tres: #fff;
+$color-cuatro: #000;
+.wd-card-thumbs{
+	width: 100%;
+	&__content{
+		max-width: 100%;
+		width: 100%;
+		box-sizing: border-box;
+		margin: auto;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		@media all and (min-width: 1281px){
+			max-width: 1440px;
+		}
+	}
+	&__item{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		max-width: 100%;
+		width: 100%;
+		margin-bottom: 2em;
+		cursor: pointer;
+		transition: all 300ms linear;
+		@media all and (min-width: 648px){
+			max-width: calc(100% / 2 - 20px);
+		}
+		@media all and (min-width: 948px){
+			max-width: calc(100% / 3 - 50px);
+			&:hover{
+				.wd-card-thumbs__item-description{
+					background: $color-dos;		
+					transition: all 300ms linear;
+				}
+			}
+		}
+		@media all and (min-width: 1281px){
+			max-width: calc(100% / 3.5 - 100px);
+		}
+		&-description{
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 0.5em;
+		    padding: 0.5em;
+		    transition: all 300ms linear;
+		    &.open{
+		    	.wd-card-thumbs__item-definition{
+		    		max-height: 700px;
+		    		transition: all 300ms linear;
+		    	}
+		    }
+		}
+		&-image{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			padding-bottom: 1em;
+			border-bottom: 2px solid $color-cuatro;
+			margin-bottom: 1em; 
+			> img{
+				width: 180px;
+				height: 180px;
+				border-radius: 50%;
+				box-sizing: border-box;
+				border: 2px solid $color-cuatro;
+			    margin-bottom: 0.5em;
+			    transition: all 300ms linear;
+			}
+			>figcaption{
+				width: 100%;
+				font-family: 'Julius Sans One', sans-serif;
+			    font-size: 1.25em;
+			    font-weight: 800;
+    			text-align: center;
+				color: $color-cuatro;	
+				transition: all 300ms linear;			
+			}
+		}
+		&-definition{
+			box-sizing: border-box;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			margin: 0;
+			padding: 0 1em;
+			max-height: 0;
+			overflow: hidden;
+			transition:max-height 700ms ease-in; 
+			dt{
+				font-family: 'Montserrat', sans-serif;
+				font-family: 1em;
+			}
+			dd{
+				font-family: 'Montserrat-Bold', sans-serif;
+				font-family: 1.25em;
+			}
+		}
+		&-button{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: $color-cuatro;
+			color: $color-tres;
+			font-size: 1.5em; 
+			width: 50%;
+    		padding: 0.5em 1em;
+			font-family: 'Julius Sans One', sans-serif;
+			font-weight: 600;
+			transition: all 300ms linear;
+			cursor: pointer;
+			@media all and (max-width: 647px){
+				padding: 0.75em 1.5em;
+			}
+			@media all and (min-width: 948px){
+				&:hover{
+					background: $color-dos;
+					color: $color-cuatro;
+					transition: all 300ms linear;
+				}
+			}
+		}
+	}
+}

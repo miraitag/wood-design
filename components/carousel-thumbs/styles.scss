@@ -1,0 +1,77 @@
+$color-uno: #8E551A;
+$color-dos: #e2b241;
+$color-tres: #fff;
+$color-cuatro: #000;
+.wd-carousel{
+	width: 100%;
+	background: rgba($color-cuatro,0.5);
+	&__main{
+		max-width: 100%;
+		width: 100%;
+		box-sizing: border-box;
+		margin: auto;
+		@media all and (min-width: 1281px){
+			max-width: 1440px;
+		}
+	}
+	&__item{
+		&.slick-slide{
+			width: 100%;
+			display: flex;
+			justify-content: space-around;
+			flex-direction: column;
+			flex-wrap: wrap;
+			align-items: center;
+			width: 200px;
+			height: auto;
+			margin: auto;
+			transition: all 300ms linear;
+		    outline: none;
+			&.slick-center{
+				transition: all 300ms linear;
+				transform: scale(1.3,1.3);
+				.wd-carousel__item-image{
+				    background: $color-dos;
+    				padding: 1em;
+    				transition: all 300ms linear;
+    				img{
+    					transition: all 300ms linear;
+    					border: 2px solid $color-cuatro;
+    				}
+    				figcaption{
+    					transition: all 300ms linear;
+    					color: $color-cuatro;
+    				}
+				}
+			}
+		}
+		&-image{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			width: 180px;
+			height: auto;
+		    margin: 3em 1em;
+		    transition: all 300ms linear;
+			>img{
+				width: 100%;
+				height: 180px;
+				border-radius: 50%;
+				box-sizing: border-box;
+				border: 2px solid $color-tres;
+			    margin-bottom: 0.5em;
+			    transition: all 300ms linear;
+			}
+			>figcaption{
+				width: 100%;
+				font-family: 'Julius Sans One', sans-serif;
+			    font-size: 1.25em;
+			    font-weight: 800;
+    			text-align: center;
+				color: $color-tres;	
+				transition: all 300ms linear;			
+			}
+		}
+	}
+}

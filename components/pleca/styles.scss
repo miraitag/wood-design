@@ -1,0 +1,18 @@
+$color-uno: #8E551A;
+$color-dos: #e2b241;
+$color-tres: #fff;
+$color-cuatro: #000;
+.wd-pleca{
+	margin-bottom: 0.5em;
+	color:$color-cuatro;
+	border-bottom: 2px solid $color-cuatro;
+	width: 100%;
+	max-width: 100%;
+	margin:0 auto 0.5em auto;
+	@media all and (min-width: 1281px){
+		max-width: 1280px;
+	}
+	&.wd-title{
+		text-shadow: none;
+	}
+}

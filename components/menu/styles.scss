@@ -31,10 +31,16 @@ $color-cuatro: #000;
     		border: 1px solid $color-tres;
     		position: relative;
     		transition: all 300ms linear;
+    		@media all and (min-width: 948px){
+    			&:hover{
+    				background: $color-dos;
+    				transition: all 300ms linear;
+				}
+    		}
 	    	&:before{
 				background: $color-tres;
 				content:'';
-				height: 4px;
+				height: 3px;
 				left: 50%;
 				position: absolute;
 				top: 50%;
@@ -80,7 +86,7 @@ $color-cuatro: #000;
 				transition: all 300ms linear;
 			    font-family: 'Montserrat', sans-serif;
 				@media all and (max-width: 647px){
-				   	font-size: 1.5em;
+				   	font-size: 1.25em;
 			        max-height: 800px;
 				}
 				&:last-child{
@@ -100,6 +106,13 @@ $color-cuatro: #000;
 				    max-height: 45px;
 				    overflow: hidden;
 				    line-height: 1.8em;
+				    transition: all 300ms linear;
+				    @media all and (min-width: 948px){
+				    	&:hover{
+				    		background: $color-dos;
+				    		transition: all 300ms linear;
+				    	}
+				    }
 				    @media all and (min-width: 648px){
 				    	align-items: center;
     					line-height: 2.5em;
@@ -141,6 +154,7 @@ $color-cuatro: #000;
 			    				max-height: 45px;
 							    overflow: hidden;
 							    line-height: 1.8em;
+							    transition: all 300ms linear;
 						 	    @media all and (min-width: 648px){
 							    	align-items: center;
 			    					line-height: 2.5em;
@@ -165,6 +179,13 @@ $color-cuatro: #000;
 							>li{
 								>a{
 									color: $color-cuatro;
+									@media all and (min-width: 948px){
+								    	&:hover{
+								    		background: $color-cuatro;
+								    		color: $color-tres;
+								    		transition: all 300ms linear;
+								    	}
+								    }
 								}
 							}
 						}
