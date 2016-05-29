@@ -4,21 +4,14 @@ var thumbs = {
 	init : function(){
 		thumbs.el.find('.wd-card-thumbs__item').each(function(index, el) {
 			var el = $(this);
-			thumbs.load(el);		
+			thumbs.load(el);
 		});
 	},
 	load : function(self){
 		thumbs.outer();
-		thumbs.alto();
 		self.find('.wd-card-thumbs__item-button').on('touchstart click', function(){
 			thumbs.open(this);
 		});
-	},
-	alto : function(){
-		for(var i = 0; i < thumbs.el.find('.wd-card-thumbs__item').length; i++){
-			var hh = thumbs.el.find('.wd-card-thumbs__item').eq(i).outerHeight();
-			thumbs.el.find('.wd-card-thumbs__item').eq(i).height(hh);
-		}
 	},
 	open : function(el){
 		if( !$(el).siblings('.wd-card-thumbs__item-description').hasClass('open') ){
@@ -39,11 +32,11 @@ var thumbs = {
 				thumbs.open();
 			}
 		});
-	}	
+	}
 }
 
 $(document).ready(function($) {
 	if($('.wd-card-thumbs').length ){
 		thumbs.init();
-	}	
+	}
 });

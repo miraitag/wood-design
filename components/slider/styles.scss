@@ -12,6 +12,8 @@ $color-cuatro: #000;
 	@media all and (min-width: 1011px){
 		min-height: 600px;
     	height: 600px;
+    	max-width: 1440px;
+    	margin: auto;
     }
 	&__item{
 		position: relative;

@@ -4,6 +4,8 @@ $color-tres: #fff;
 $color-cuatro: #000;
 .wd-card-thumbs{
 	width: 100%;
+	max-width: 1280px;
+    margin: auto;
 	&__content{
 		max-width: 100%;
 		width: 100%;
@@ -12,9 +14,6 @@ $color-cuatro: #000;
 		display: flex;
 		justify-content: space-around;
 		flex-wrap: wrap;
-		@media all and (min-width: 1281px){
-			max-width: 1440px;
-		}
 	}
 	&__item{
 		display: flex;
@@ -30,16 +29,16 @@ $color-cuatro: #000;
 			max-width: calc(100% / 2 - 20px);
 		}
 		@media all and (min-width: 948px){
-			max-width: calc(100% / 3 - 50px);
+			max-width: calc(100% / 4 - 50px);
 			&:hover{
 				.wd-card-thumbs__item-description{
-					background: $color-dos;		
+					background: $color-dos;
 					transition: all 300ms linear;
 				}
 			}
 		}
 		@media all and (min-width: 1281px){
-			max-width: calc(100% / 3.5 - 100px);
+			max-width: calc(100% / 4 - 100px);
 		}
 		&-description{
 			display: flex;
@@ -61,7 +60,6 @@ $color-cuatro: #000;
 			flex-direction: column;
 			padding-bottom: 1em;
 			border-bottom: 2px solid $color-cuatro;
-			margin-bottom: 1em; 
 			> img{
 				width: 180px;
 				height: 180px;
@@ -77,8 +75,8 @@ $color-cuatro: #000;
 			    font-size: 1.25em;
 			    font-weight: 800;
     			text-align: center;
-				color: $color-cuatro;	
-				transition: all 300ms linear;			
+				color: $color-cuatro;
+				transition: all 300ms linear;
 			}
 		}
 		&-definition{
@@ -90,7 +88,7 @@ $color-cuatro: #000;
 			padding: 0 1em;
 			max-height: 0;
 			overflow: hidden;
-			transition:max-height 700ms ease-in; 
+			transition:max-height 700ms ease-in;
 			dt{
 				font-family: 'Montserrat', sans-serif;
 				font-family: 1em;
@@ -106,7 +104,7 @@ $color-cuatro: #000;
 			justify-content: center;
 			background: $color-cuatro;
 			color: $color-tres;
-			font-size: 1.5em; 
+			font-size: 1.5em;
 			width: 50%;
     		padding: 0.5em 1em;
 			font-family: 'Julius Sans One', sans-serif;
