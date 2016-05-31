@@ -20,7 +20,11 @@ $color-cuatro: #000;
 			margin-bottom: 1em;
 			&.wd-title__description{
 				font-family: 'Montserrat', sans-serif;
-				font-size: 1.25em;
+				font-size: 1em;
+				line-height: 1.5;
+				@media all and (max-width: 647px){
+					font-size: 1.25em;
+				}
 			}
 		}
 		&-image{

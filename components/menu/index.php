@@ -10,6 +10,7 @@
 				<a href="#">Escuela de Carpintería<i></i></a>
 				<ul>
 					<li><a href="carpinteria.php">Bienvenida</a></li>
+					<li><a href="carpinteria-historia.php">Historia</a></li>
 					<li><a href="carpinteria-perfil.php">Perfil</a></li>
 					<li><a href="carpinteria-docentes.php">Docentes</a></li>
 					<li><a href="carpinteria-plan.php">Perfil</a></li>
@@ -33,7 +34,7 @@
 				<a href="#">Directorio</a>
 			</li>
 			<li class="wd-menu__panel-content__item">
-				<a href="#">Ellos confian en nosotros</a>
+				<a href="confianza.php">Ellos confian en nosotros</a>
 			</li>
 		</ul>
 	</section>

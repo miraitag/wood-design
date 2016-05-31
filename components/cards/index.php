@@ -13,6 +13,11 @@
 					<h1><?php echo $content[$i]['title'] ?></h1>
 					<p><?php echo $content[$i]['text'] ?></p>
 				</div>
+				<?php if ( !empty( $content[$i]['link'] ) && $content[$i]['link'] != 'false' ) { ?>
+					<a href="<?php echo $content[$i]['link']?>" target="_blank"> <?php echo $content[$i]['link'] ?> </a>
+				<?php }else if(  $content[$i]['link'] == 'false' ){?>
+					<a href="#"> No Disponible </a>
+				<?php } ?>
 				<button class="wd-card__item-description__button">+</button>
 			</div>
 		</article>
