@@ -1,36 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Escuela WoodDesign</title>
-	<link rel="stylesheet" href="dist/css/global.css">
-	<meta content="Escuela Wood And Design" name="author" />
-	<meta content="Escuela Wood And Design y Escuela Preparatoria" name="description" />
-	<meta content="Escuela, Especialidad, Carpintería, Profesionalismo, Preparatoria, Prepa, Diseño, Madera, Industria Madedera, Especialistas, Juventud, Oportunidad" name="keywords" />
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
-</head>
-<body>
-	<div class="wd-stage">
-		<h1 class="wd-stage__prox">Próximamente</h1>
-		<hr class="wd-stage__separate"/>
-		<section class="wd-stage__main">
-			<figure class="wd-stage__main-students">
-				<img src="assets/img/students.png"/>
-			</figure>
-			<figure class="wd-stage__main-logo">
-				<img src="assets/img/logo_wd.png"/>
-				<h4 class="wd-stage__main-logo__title">Escuela</h4>
-				<p class="wd-stage__main-logo__new"> Se renueva</p>
-			</figure>
-		</section>
+<?php $title="WD | Carpinteria"; include "components/head.php"; ?>
+	<div class="wd-wrapper">
+		<?php  include "components/menu/index.php"; ?>
+		<div class="wd-wrapper__max">
+			<main class="wd-main">
+				<?php
+					$stage_location = 'right';
+					$stage_class = 'gray';
+					$stage_title = 'Wood & Design';
+					include "components/stage/index.php";
+							$content = array(
+						array(
+							'text' => 'Formar especialistas en la industria de la madera, con los conocimientos suficientes para trascender con ÉXITO a un mundo empresarial.',
+							'title' => 'Misión',
+							'img' => 'http://lorempixel.com/400/300'
+						),
+						array(
+							'text' => 'Ser la primera institución educativa privada, enfocada a la especialidad en la industria de la MADERA.<br/> <br/>Convirtiéndonos en la base para un cambio positivo de la sociedad, facilitando los medios idóneos, realizando un trabajo educativo, artístico y responsable, alcanzando un estatus de primer nivel en un mundo globalizado.',
+							'title' => 'Visión',
+							'img' => 'http://lorempixel.com/400/300/sports'
+						),
+						array(
+							'text' => '- Cafetería y Ferretería
+										- Sala Audiovisual <br/>
+										- Taller a nivel profesional <br/>
+										- Taller de diseño y dibujo <br/>
+										- Taller De Computación <br/>
+										- Estacionamiento y vigilan',
+							'title' => 'Instalaciones',
+							'img' => 'http://lorempixel.com/400/300/transport'
+						),
+					);
+					include "components/cards/index.php";
+					$pleca = 'Historia';
+					include "components/pleca/index.php";
+					$preview = [
+						'http://lorempixel.com/1280/350',
+						'En la actualidad  la industria maderera va más allá de saber hacer de una especialidad. La propuesta de nuestra escuela  pretende promover una visión amplia del campo de estudio al considerar los aspectos instrumentales de las técnicas, sus procesos de cambio, gestión e innovación y su relación con la sociedad y la naturaleza; además, recurre a la participación social en el uso, creación y mejora de los productos madereros, así como de las implicaciones de éstos en el entorno...',
+						'carpinteria-historia.php',
+					];
+					include "components/preview/index.php";
+					$button = ['Compromiso','Creatividad','Responsabilidad','Ética'];
+					include "components/values/index.php";
+					include "components/foo/index.php";
+				?>
+			</main>
+		</div>
 	</div>
-	<footer class="wd-footer">
-		<p class="wd-footer__adress"><b>Dirección:</b> Paseo Tollocan #18 Colonia La Concepción, San Mateo Atenco. CP.- 52105 </p>
-		<a href="https://www.facebook.com/Escuela-De-Carpinter%C3%ADa-WD-1678863142353688/" class="wd-footer__facebook" target="_blank">
-			<b>Visítanos:</b>
-			<img src="assets/img/facebook.png"/>
-		</a>
-	</footer>
-</body>
-</html>
-<link rel="stylesheet" type="text/css" href="dist/css/global.css"/>
+ <?php  include "components/footer.php";

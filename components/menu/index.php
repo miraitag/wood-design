@@ -6,18 +6,20 @@
 	</section>
 	<section class="wd-menu__panel">
 		<ul class="wd-menu__panel-content">
+			<li class="wd-menu__panel-content__item">
+				<a href="index.php">Home</a>
+			</li>
 			<li class="wd-menu__panel-content__item submenu">
 				<a href="#">Escuela de Carpintería<i></i></a>
 				<ul>
-					<li><a href="carpinteria.php">Bienvenida</a></li>
+					<!--<li><a href="carpinteria.php">Bienvenida</a></li>-->
 					<li><a href="carpinteria-historia.php">Historia</a></li>
+					<li><a href="carpinteria-cursos.php">Cursos</a></li>
 					<li><a href="carpinteria-perfil.php">Perfil</a></li>
-					<li><a href="carpinteria-docentes.php">Docentes</a></li>
-					<li><a href="carpinteria-plan.php">Perfil</a></li>
-					<li><a href="carpinteria-inscripcion.php">Inscripción</a></li>
+					<!--<li><a href="carpinteria-docentes.php">Docentes</a></li>-->
 				</ul>
 			</li>
-			<li class="wd-menu__panel-content__item submenu">
+			<!--<li class="wd-menu__panel-content__item submenu">
 				<a href="#">Preparatoria<i></i></a>
 				<ul>
 					<li><a href="preparatoria.php">Bienvenida</a></li>
@@ -32,7 +34,7 @@
 			</li>
 			<li class="wd-menu__panel-content__item">
 				<a href="#">Directorio</a>
-			</li>
+			</li>-->
 			<li class="wd-menu__panel-content__item">
 				<a href="confianza.php">Ellos confian en nosotros</a>
 			</li>

@@ -10,30 +10,23 @@
 					include "components/stage/index.php";
 							$content = array(
 						array(
-							'text' => 'Duis aute irure dolor in reprehenderit in voluptate velit esse
-										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse
-										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+							'text' => 'Formar especialistas en la industria de la madera, con los conocimientos suficientes para trascender con ÉXITO a un mundo empresarial.',
 							'title' => 'Misión',
 							'img' => 'http://lorempixel.com/400/300'
 						),
 						array(
-							'text' => 'Duis aute irure dolor in reprehenderit in voluptate velit esse
-										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse
-										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+							'text' => 'Ser la primera institución educativa privada, enfocada a la especialidad en la industria de la MADERA.<br/> <br/>Convirtiéndonos en la base para un cambio positivo de la sociedad, facilitando los medios idóneos, realizando un trabajo educativo, artístico y responsable, alcanzando un estatus de primer nivel en un mundo globalizado.',
 							'title' => 'Visión',
 							'img' => 'http://lorempixel.com/400/300/sports'
 						),
 						array(
-							'text' => 'Duis aute irure dolor in reprehenderit in voluptate velit esse
-										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse
-										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-							'title' => 'Bienvenida',
+							'text' => '- Cafetería y Ferretería
+										- Sala Audiovisual <br/>
+										- Taller a nivel profesional <br/>
+										- Taller de diseño y dibujo <br/>
+										- Taller De Computación <br/>
+										- Estacionamiento y vigilan',
+							'title' => 'Instalaciones',
 							'img' => 'http://lorempixel.com/400/300/transport'
 						),
 					);
@@ -46,6 +39,8 @@
 						'carpinteria-historia.php',
 					];
 					include "components/preview/index.php";
+					$button = ['Compromiso','Creatividad','Responsabilidad','Ética'];
+					include "components/values/index.php";
 					/*$pleca = 'Docentes';
 					include "components/pleca/index.php";
 					include "components/carousel-thumbs/index.php";*/

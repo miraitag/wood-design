@@ -13,7 +13,7 @@ $color-cinco: #CB2027;
 		display: flex;
 		flex-direction: column;
 		max-width: 90%;
-	    margin-bottom:1em;
+	    margin-bottom:2em;
 		width: 100%;
 		border-radius: 0.7em;
 	    border: 1px solid rgba($color-cuatro, 0.2);
@@ -50,6 +50,8 @@ $color-cinco: #CB2027;
 				display: flex;
 				flex-direction: column;
 				padding: 1em;
+			    width: 100%;
+    			box-sizing: border-box;
 				h1{
 					font-family: "Oswald", sans-serif;
 					font-size: 2em;

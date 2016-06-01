@@ -78,31 +78,15 @@ $vine: #00bf8f;
 	&__shares{
 		display: flex;
 		align-items: center;
-		width: 90%;
+		width: auto;
 		justify-content: center;
-		@media all and (max-width: 647px){
-			flex-wrap: wrap;
-		}
-		@media all and (min-width: 648px){
-			justify-content:space-between;
-		}
-		@media all and (min-width: 948px){
-			width: calc(100% / 2);
-		}
-		@media all and (max-width: 947px){
-			padding-top: 1em;
-		}
-		@media all and (min-width: 1280px){
-			width: calc(80% / 2 - 50px);
-		}
+		flex-wrap: wrap;
 		&-item{
 			display: flex;
 			border-radius: 50%;
 			border: 1px solid $color-tres;
 			transition: all 300ms linear;
-			@media all and (max-width: 647px){
-				margin:0.5em;
-			}
+			margin: 0.5em;
 			@media all and (min-width: 948px){
 				&:hover{
 					background: transparent;
@@ -150,6 +134,16 @@ $vine: #00bf8f;
 					}
 				}
 			}
+		}
+	}
+	&__logo{
+		width: 100%;
+		max-width: 20%;
+		@media all and (min-width: 948px){
+			max-width: 15%;
+		}
+		img{
+			width: 100%;
 		}
 	}
 }
