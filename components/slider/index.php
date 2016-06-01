@@ -1,6 +1,5 @@
 <div class="wd-slider">
-	<a href="#" class="wd-slider__item"  target="_blank" style="background: red;">
-		<h3>Conoce nuestras especialidades</h3>
+	<a href="http://www.expoampimm.com/" class="wd-slider__item first"  target="_blank">
 	</a>
 	<a href="#" class="wd-slider__item"  target="_blank" style="background: blue;">
 		<h3>Forma parte de nuestra preparatoria</h3>

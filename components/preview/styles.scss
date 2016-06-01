@@ -30,6 +30,24 @@ $color-cuatro: #000;
 		&-image{
 			margin-bottom: 1em;
 			width: 100%;
+			position: relative;
+			&:after{
+			    content: '';
+			    position: absolute;
+			    bottom: 3px;
+			    width: 90%;
+			    background: linear-gradient(to right, black 0%, transparent 44%, transparent 54%, transparent 57%, black 100%);
+			    height: 50px;
+			    z-index: -1;
+			    box-shadow: 0 0 30px #000;
+			}
+			&:after{
+				left: 50%;
+				transform: translateX(-50%);
+			}
+			img{
+				width: 100%;
+			}
 		}
 		&-link{
 			display: flex;
