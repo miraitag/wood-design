@@ -3,7 +3,7 @@
 		<a href="index.php" class="wd-footer__logo"><img src="assets/img/logo_wd_footer.png"></a>
 		<ul class="wd-footer__options">
 			<!--<li class="wd-footer__options-item"><a href="#">Aviso de privacidad</a></li>-->
-			<li class="wd-footer__options-item"><a href="#">Contacto</a></li>
+			<li class="wd-footer__options-item"><a href="contacto.php">Contacto</a></li>
 		</ul>
 		<ul class="wd-footer__shares">
 			<li class="wd-footer__shares-item facebook"><a href="https://www.facebook.com/Escuela-De-Carpinter%C3%ADa-WD-1678863142353688/" target="_blank"><i class="wd-icon-facebook"></i></a></li>

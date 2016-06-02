@@ -1,0 +1,51 @@
+$color-uno: #8E551A;
+$color-dos: #e2b241;
+$color-tres: #fff;
+$color-cuatro: #000;
+.wd-map{
+	width: 100%;
+	max-width: 100%;
+	margin: 0 auto 2em;
+	@media all and (min-width: 648px){
+	    max-width: 90%;
+	}
+	&__iframe{
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		height: 300px;
+		margin-bottom: 2em;
+		@media all and (min-width: 648px){
+	    	height: 400px;
+		}
+	}
+	&__datos{
+		width: 100%;
+		text-align: center;
+		h3,p,a{
+			color: $color-cuatro;
+			margin: 0;
+		}
+		h3{
+			font-family: 'Oswald', sans-serif;
+			font-size: 24px;
+			@media all and (max-width: 647px){
+				font-size: 30px;
+			}
+		}
+		p,a{
+			font-family: 'Montserrat Regular', sans-serif;
+			font-size: 22px;
+			@media all and (max-width: 647px){
+				font-size: 28px;
+			}
+		}
+		a{
+			@media all and (min-width: 948px){
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
