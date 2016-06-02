@@ -5,8 +5,10 @@
 			<main class="wd-main">
 				<?php
 					$stage_location = 'right';
-					$stage_class = 'gray';
-					$stage_title = 'Wood & Design';
+					$stage_class = 'yellow';
+					$stage_title = 'Cursos';
+					$stage_image = 'in/carpinteria_cursos';
+					$stage_description = 'Descubre lo que podemos hacer por ti y tu futuro';
 					include "components/stage/index.php";
 							$content = array(
 						array(
@@ -15,7 +17,7 @@
 										Horario: Lunes a Viernes de 8:00am - 3:00pm <br/>
 										Costo: $1,800.00 MXN (Mensuales)',
 							'title' => 'Semanal',
-							'img' => 'http://lorempixel.com/400/300'
+							'img' => 'assets/img/cards/carpinteria_cursos_semanal.jpg'
 						),
 						array(
 							'text' => 'Es un curso de únicamente enseñanza técnica de carpintería, tendrá acceso a los talleres, salas de uso básico y acceso a todas las herramientas.
@@ -23,7 +25,7 @@
 										Costo de Paquete: $1000.00 MXN (Mensual) <br/>
 										Horario: Sábados de 8:00am a 3:00pm',
 							'title' => 'Sabatino',
-							'img' => 'http://lorempixel.com/400/300/sports'
+							'img' => 'assets/img/cards/carpinteria_cursos_sabatino.jpg'
 						),
 						array(
 							'text' => '- Administración <br/>
@@ -33,7 +35,7 @@
 										- Computación (renders de proyectos) <br/>
 										- Ingles Basico Interpretrativo en la Industría de la Madera',
 							'title' => 'Materias',
-							'img' => 'http://lorempixel.com/400/300/transport'
+							'img' => 'assets/img/cards/carpinteria_cursos_materias.jpg'
 						),
 						array(
 							'text' => 'Los requisitos para inscripción son:<br/>
@@ -56,7 +58,7 @@
 										*CURP <br/>
 										*Certificado médico',
 							'title' => 'Inscripción',
-							'img' => 'http://lorempixel.com/400/300/transport'
+							'img' => 'assets/img/cards/carpinteria_cursos_inscripcion.jpg'
 						)
 					);
 					include "components/cards/index.php";

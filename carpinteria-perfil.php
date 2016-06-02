@@ -4,9 +4,11 @@
 		<div class="wd-wrapper__max">
 			<main class="wd-main">
 				<?php
-					$stage_location = 'right';
-					$stage_class = 'gray';
-					$stage_title = 'Wood & Design';
+					$stage_location = 'left';
+					$stage_class = 'black';
+					$stage_title = 'Perfil';
+					$stage_image = 'in/carpinteria_perfil';
+					$stage_description = 'Lo que búscamos esta en ti, construimos al profesional que llevas dentro';
 					include "components/stage/index.php";
 
 					$pleca = 'Obejtivos generales del plan de estudio';

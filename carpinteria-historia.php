@@ -6,7 +6,9 @@
 				<?php
 					$stage_location = 'right';
 					$stage_class = 'gray';
-					$stage_title = 'Wood & Design';
+					$stage_title = 'Conócenos';
+					$stage_image = 'in/carpinteria_historia';
+					$stage_description = 'Foma parte de nuestra historia, y nuestra profesionalidad';
 					include "components/stage/index.php";
 					$pleca = 'Introducción';
 					include "components/pleca/index.php";

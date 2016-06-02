@@ -1,5 +1,6 @@
 <?php
 	$stage_class = isset($stage_class)? $stage_class : '';
+	$stage_image = isset($stage_image)? $stage_image : 'student_01';
 	$stage_background = isset($stage_background) && $stage_background[0] == 'true' ? $stage_background : ['false',''];
 	$stage_location = isset($stage_location) ? $stage_location : '';
 	$stage_title = isset($stage_title) ? $stage_title : 'Bienvenido a Wood & Design';
@@ -10,7 +11,7 @@
 	<div class="wd-stage__main">
 		<div class="wd-stage__content <?php echo $stage_location ?>">
 			<figure class="wd-stage__content-image">
-				<img src="assets/img/student_01.png" alt="Studen Home" title=" Student Home">
+				<img src="assets/img/<?php echo $stage_image ?>.png" alt="Studen Home" title=" Student Home">
 			</figure>
 			<div class="wd-stage__content-description">
 				<h3 class="wd-stage__content-description__title wd-title"><?php echo $stage_title ?></h3>
